@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>CSS Rotate</title>
+	<style>
+		body
+		{
+			background-color: cyan;
+		}
+		div
+		{
+			box-shadow: 0 0 10px white;
+			width:350px;
+			height:250px;
+			margin: 60px auto;
+			overflow: hidden;
+			position:relative;
+
+
+		}
+		div>img
+		{
+			width: inherit;
+			height: inherit;
+			filter: grayscale(100%);
+			transition: all 1s linear 0s;
+			
+
+		}
+		div:hover
+		{
+			cursor: pointer;
+		}
+		div:hover>img
+		{
+			filter: grayscale(0%);
+			transform: scale(1.2,1.2);
+		}
+		div>#curtain
+		{
+			background-color:lightblue;
+			top:-60px;
+			left:0px;
+			position:absolute;
+			transition: all 1s linear 0s;
+
+			
+			
+		
+		}
+		div:hover>#curtain
+		{
+			
+			transform: translateY(-100%);
+
+		}
+		div>#leftdoor
+		{
+			background-color:blue;
+			top:-60px;
+			left:-20px;
+			position:absolute;
+			transition: all 1s linear 0s;
+
+	    }
+		div:hover>#leftdoor
+		{
+			
+			transform: translateY(-100%);
+
+		}
+		div>#righttdoor
+		{
+			background-color:blue;
+			top:-60px;
+			right:-10px;
+			position:absolute;
+			transition: all 1s linear 0s;
+
+	    }
+		div:hover>#rightdoor
+		{
+			
+			transform: translateY(-100%);
+
+		}
+	
+	
+		
+
+	</style>
+</head>
+<body>
+<div>
+	<img src="C:\WebDev\h2.jpg">
+	<div id="curtain">
+	<div id="leftdoor">
+	<div id="rightdoor">
+</div>
+	
+
+</body>
+</html>
